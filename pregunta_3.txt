@@ -1,1 +1,19 @@
 pregunta 3
+
+definir los siguientes conceptos,
+
+working directory:
+Es el directorio en el cual se colocan los archivos cuando se traen de la DB de
+git para ser usados o modificado.
+
+Es el directorio en donde se trabaja y modifica los archivos. 
+
+index:
+
+local repo:
+
+remote repo:
+
+dirty working tree:
+
+merge conflict:

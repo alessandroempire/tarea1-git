@@ -1,2 +1,15 @@
 pregunta 1
 
+El hash es: 
+6035545b3500c1c18bd57514d83c773d741d5c64
+
+Este Hash es unico. 
+Cada commit tiene un hash unico. 
+
+Para ver como es util, veamos un ejemplo:
+Si se esta trabajando con un proyecto, cada vez que se desarrolla una 
+funcionalidad y esta es estable (funciona bien), se hace commit.
+
+Si en un futuro commit, nos percatamos que se hizo commit de una version que NO
+es estable, se puede buscar el hash de la ultima version que sabemos que es
+estable y se puede revertir los cambios del repo local a esa version estable.  
