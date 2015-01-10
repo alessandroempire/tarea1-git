@@ -9,11 +9,34 @@ git para ser usados o modificado.
 Es el directorio en donde se trabaja y modifica los archivos. 
 
 index:
+El index es donde se coloca los archivos que el usuario desea hacer commit al 
+repositorio. Es un staging area, el cual se actualiza con el working tree
+del usuario. 
+
+Mostrar el contenido del index: git ls-files --stage
 
 local repo:
+Son los archivos que se tiene de forma local, en la maquina del usuario. 
 
 remote repo:
+Son versiones del proyecto que se encuentran en la internet o una red.
+Significa que los archivos del proyecto se encuentra en la nube, en la BD
+de git y se accesa pueden bajar de distinta forma:
+traer todo el proyecto/repositorio: git clone
+traer las actualizacion del proyecto del branch master: git pull origin master 
+push, hacer actualizacion al proyecto al branch master: git push origin master
+Ojo, para el ultimo pase es necesario hacer commit de los archivos primero.
 
 dirty working tree:
+Son donde se mantienen los cambios que no han sido agregados al index, al
+staging area. 
+A medida que un usuario modifica archivos en su working directory, estos se
+agregan al working tree. 
 
 merge conflict:
+Si es esta trabajando en un branch A y se modifica una parte del codigo,
+y en el master branch se modifica las misma parte del codigo pero con algo 
+distinto, al hacer merge de los branch git no puede "juntar" los archivos
+y por tanto reporta un merge conflict para que el usuario decida cual
+es el codigo que se desea tener: el codigo del branch A o el codigo del
+master branch.
